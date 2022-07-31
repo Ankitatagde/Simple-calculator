@@ -1,0 +1,65 @@
+<html>
+
+
+<script type="text/javascript">
+function getValue(firstnumber, secondnumber)
+{
+x=document.getElementById("firstnumber").value;
+y=document.getElementById("secondnumber").value;
+}
+
+function add()
+{
+getValue();
+sum=Number(x)+Number(y);
+document.getElementById("result").innerHTML="addition of " +x+" + "+y+"="+sum;
+}
+
+function sub()
+{
+getValue();
+sub=Number(x)-Number(y);
+document.getElementById("result").innerHTML="subtraction of " +x+" - "+y+"="+sub;
+}
+
+function mul()
+{
+getValue();
+mul=Number(x)*Number(y);
+document.getElementById("result").innerHTML="multiplication of " +x+" * "+y+"="+mul;
+}
+
+function div()
+{
+getValue();
+div=Number(x)/Number(y);
+document.getElementById("result").innerHTML="division of " +x+" / "+y+"="+div;
+}
+</script>
+
+<table bg color:"green" border:black> 
+<h1>ONLINE CALCULATOR</h1>
+<br><br>
+<tr>
+<td>enter a first number:</td>
+<td><input type="text" id="firstnumber" required/></td>
+</tr>
+
+<tr>
+<td>enter a second number:</td>
+<td><input type="text" id="secondnumber" required/></td>
+</tr>
+</table>
+<br>
+<button onclick="add()">ADDITION</button>
+<button onclick="sub()">SUBSTRACT</button>
+<button onclick="mul()">MULTIPLY</button>
+<button onclick="div()">division</button>
+
+<br>
+
+<p id="result">Result</p>
+</body>
+</html>
+
+
